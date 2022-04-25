@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calorie and Nutrition Tracker</title>
+    <h1>Here are the results from your search</h1>
+    <h2>Enter which result is the best at the bottom of the page</h2>
+  </head>
+  <body>
+      <p> {{ result1 }} 
+      <br> {{ result1desc }}
+      <br> {{ result1brand }}
+      <br> {{ result1cals }}
+      <br> {{ result1serving }}
+      </p>
+      <p> {{ result2 }} 
+      <br> {{ result2desc }}
+      <br> {{ result2brand }}
+      <br> {{ result2cals }}
+      <br> {{ result2serving }}
+      </p>
+      <p> {{ result3 }} 
+      <br> {{ result3desc }}
+      <br> {{ result3brand }}
+      <br> {{ result3cals }}
+      <br> {{ result3serving }}
+      </p>
+      <p> {{ result4 }} 
+      <br> {{ result4desc }}
+      <br> {{ result4brand }}
+      <br> {{ result4cals }}
+      <br> {{ result4serving }}
+      </p>
+      <p> {{ result5 }} 
+      <br> {{ result5desc }}
+      <br> {{ result5brand }}
+      <br> {{ result5cals }}
+      <br> {{ result5serving }}
+      </p>
+      <p>Choose which of the results best describes the food you are entering:</p>
+
+      <form action="/serving" method = "POST">
+        <input type="radio" id="First Result" name="Which_food" value="First Result">
+        <label for="html">First Result</label><br>
+        <input type="radio" id="Second Result" name="Which_food" value="Second Result">
+        <label for="html">Second Result</label><br>
+        <input type="radio" id="Third Result" name="Which_food" value="Third Result">
+        <label for="html">Third Result</label><br>
+        <input type="radio" id="Fourth Result" name="Which_food" value="Fourth Result">
+        <label for="html">Fourth Result</label><br>
+        <input type="radio" id="Fifth Result" name="Which_food" value="Fifth Result">
+        <label for="html">Fifth Result</label><br>
+        <input type = "submit" value = "Submit" />
+
+      </form>
+  </body>
+</html>
