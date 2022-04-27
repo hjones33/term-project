@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calorie and Nutrition Tracker</title>
+    <h1>Food Diary</h1>
+    <h2>Calorie and Nutrition Tracker</h2>
+    <h3>Enter which result is the best at the bottom of the page</h3>
+  </head>
+  <body>
+      <p> {{ foodselection }} 
+      <br> {{ resultdesc }}
+      <br> {{ resultbrand }}
+      <br> {{ resultcals }}
+      <br> {{ resultserving }}
+      </p>
+      <p>Choose which proportion of the serving size that best represents what you ate:</p>
+
+      <form action="/nutrition" method = "POST">
+        <input type="radio" id="1/4" name="Which_size" value="1/4">
+        <label for="html">1/4</label><br>
+        <input type="radio" id="1/2" name="Which_size" value="1/2">
+        <label for="html">1/2</label><br>
+        <input type="radio" id="3/4" name="Which_size" value="3/4">
+        <label for="html">3/4</label><br>
+        <input type="radio" id="1" name="Which_size" value="1">
+        <label for="html">1</label><br>
+        <input type="radio" id="1.5" name="Which_size" value="1.5">
+        <label for="html">1.5</label><br>
+        <input type="radio" id="2" name="Which_size" value="2">
+        <label for="html">2</label><br>
+        <input type="radio" id="3" name="Which_size" value="3">
+        <label for="html">3</label><br>
+        <input type = "submit" value = "Submit" />
+
+      </form>
+  </body>
+</html>

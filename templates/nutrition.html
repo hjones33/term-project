@@ -11,9 +11,14 @@
     <h3>This application will help you get healthy by tracking your caloric and nutrient intake every day and compare it to the reccomended daily value</h3>
   </head>
   <body>
-    <form action="/data" method = "POST">
-      <p>Enter a Food here: <input type = "text" name = "Food" /></p>
-      <p><input type = "submit" value = "Submit" /></p>
+        <p> {{itemadded}} 
+        <br> {{ itemfacts }}
+        <!-- <br> {{ resultbrand }}
+        <br> {{ resultcals }}
+        <br> {{ resultserving }} -->
+        </p>
+    <form action="/" method = "POST">
+      <p><input type = "Add Another Food" value = "Add Another Food" /></p>
   </form>
       
   </body>

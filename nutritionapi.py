@@ -4,7 +4,7 @@ from urllib.parse import urlencode
 from config import APPID, APPKEY
 
 reccomended_dvs = {'Calories': 2000, 'Fat': 78, 'Cholesterol': 300, 'Sodium': 2300, 'Carbohydrates': 275, 'Dietary Fiber': 28, 'Sugar': 50, 'Protein': 50, 'Vitamin A': 100, 'Vitamin C': 100, 'Calcium': 100, 'Iron': 100}
-
+initial = []
 def initialsearch(item):
     """Display Initial Search Results to User, Ideally allow them to select"""
     item2 = item.replace(" ", "")
@@ -12,7 +12,6 @@ def initialsearch(item):
     with urllib.request.urlopen(url) as f:
         response_text = f.read().decode('utf-8')
         j = json.loads(response_text)
-        print (j)
         listofresults = j['hits']
 
         return listofresults       
@@ -28,8 +27,8 @@ def storenutrition():
 
 def main():
     """Goes through and runs everything you need to get the closest station and whether or not it is wheelchair acessible or not"""
-    initialresults = initialsearch('Chicken sandwich')
-    # print(initialresults)
-
+    templist = initialsearch('Tacos')
+    initial.append(templist)
+    print(templist)
 if __name__ == '__main__':
     main()
