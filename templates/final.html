@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        table, th, td {
+        border: 1px solid;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        body {
+          text-align: center;
+          background-color: #eae7dc;
+        }
+        
+        h1 {
+          color: #e85a4f ;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 30px;
+        
+        }
+        h2 {
+          color: #123c69 ;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 24px;
+        
+        }
+        h3 {
+          color: #ac3b61 ;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+        
+        }
+        </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calorie and Nutrition Tracker</title>
+    <h1>Food Diary</h1>
+    <h2>Calorie and Nutrition Tracker</h2>
+    <h3>This application will help you get healthy by tracking your caloric and nutrient intake every day and compare it to the reccomended daily value</h3>
+  </head>
+  <body>
+
+    <table>
+        <tr>
+          <th>Your Nutritional Intake</th>
+          <th>Reccomended Daily Value</th>
+          <th>Words of encouragement</th>
+        </tr>
+        <tr>
+          <td>{{ finalcal }}</td>
+          <td>{{ dvcal }}</td>
+          <td>{{ vscal }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalfat }}</td>
+            <td>{{ dvfat }}</td>
+            <td>{{ vsfat }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalcholesterol }}</td>
+            <td>{{ dvcholesterol }}</td>
+            <td>{{ vscholesterol }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalsodium }}</td>
+            <td>{{ dvsodium }}</td>
+            <td>{{ vssodium }}</td>
+          </tr>
+        <tr>
+            <td>{{ finalcarbs }}</td>
+            <td>{{ dvcarbs }}</td>
+            <td>{{ vscarbs }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalfiber }}</td>
+            <td>{{ dvfiber }}</td>
+            <td>{{ vsfiber }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalsugar }}</td>
+            <td>{{ dvsugar }}</td>
+            <td>{{ vssugar }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalprotein }}</td>
+            <td>{{ dvprotein }}</td>
+            <td>{{ vsprotein }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalvita }}</td>
+            <td>{{ dvvita }}</td>
+            <td>{{ vsvita }}</td>
+        </tr>
+        <tr>
+          <td>{{ finalvitc }}</td>
+          <td>{{ dvvitc }}</td>
+          <td>{{ vsvitc }}</td>
+        </tr>
+        <tr>
+            <td>{{ finalcalc }}</td>
+            <td>{{ dvcalc }}</td>
+            <td>{{ vscalc }}</td>
+          </tr>
+        <tr>
+            <td>{{ finaliron }}</td>
+            <td>{{ dviron}}</td>
+            <td>{{ vsiron }}</td>
+          </tr>
+
+
+      </table> 
+      <form id="myform" method="GET" action="/">
+        <input type="submit" value="Start a new day of entries"
+               onclick="document.forms['myform'].action='/'">
+  </body>
+</html>
+
+      

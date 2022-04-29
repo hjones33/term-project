@@ -37,12 +37,12 @@
     <title>Calorie and Nutrition Tracker</title>
     <h1>Food Diary</h1>
     <h2>Calorie and Nutrition Tracker</h2>
-    <h3>This application will help you get healthy by tracking your caloric and nutrient intake every day and compare it to the reccomended daily value</h3>
+    <h3>The page you are trying to see does not exist click the button below to go back to the main page</h3>
   </head>
   <body>
-    <form action="/data" method = "POST">
-      <p>Enter a Food here: <input type = "text" name = "Food" /></p>
-      <p><input type = "submit" value = "Submit" /></p>
+    <form id="myform" method="GET" action="/">
+        <input type="submit" value="Go Back"
+               onclick="document.forms['myform'].action='/'">
   </form>
       
   </body>
